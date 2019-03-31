@@ -1,3 +1,39 @@
-<p>
-  profile works!
-</p>
+<div class="container">
+  <h1>Github Search</h1>
+  <div class="row">
+    <app-form (addUser)='getResponse($event)'></app-form>
+  </div> <!--end row form -->
+
+
+  <div class="row">
+    <div class="col-md-6">
+      <div appBolder class="profile-card">
+        <div class="center">
+          <img style="width: 50%; height: 50%" class="img-fluid img-circle" src="{{user.photoUrl}}" alt="Avatar">
+          <h3 appBolder >{{user.userProfile}}</h3>
+        </div>
+        <p>{{user.bio}}</p>
+        <div class="follow">
+          <button class="btn-info" type="button" name="button">Followers: {{user.followers}}</button>
+          <button class="btn-info following" type="button" name="button">Following: {{user.following}}</button>
+        </div>
+        <br>
+        <div class="center">
+          <button class="btn-danger" type="button" name="button" (click)='toggleRepos()' (click)='getRepos()'>Repos:{{user.numRepos}} <br> Click to View </button>
+        </div>
+        <br>
+         
+      </div>
+    </div> <!-- end div profile -->
+
+
+    <div class="col-md-6 scroll">
+      <div *ngFor='let repo of arrayRepo'>
+        <app-repos *ngIf='user.showRepos' [repo]='repo'></app-repos>
+      </div>
+    </div> <!-- end div repos -->
+
+
+  </div> <!-- end div row github -->
+
+</div>

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
+import { UserRequestService } from '../services/profileservice';
+import { User } from '../user';
+import { Repo } from '../repo-class/repo';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
