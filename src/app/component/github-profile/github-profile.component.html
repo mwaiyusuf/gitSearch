@@ -1,7 +1,7 @@
 <div class="container">
   <h1>Github Search</h1>
   <div class="row">
-    <app-form (addUser)='getResponse($event)'></app-form>
+    <app-github-form (addUser)='getResponse($event)'></app-github-form>
   </div> <!--end row form -->
 
 
@@ -9,7 +9,7 @@
     <div class="col-md-6">
       <div appBolder class="profile-card">
         <div class="center">
-          <img style="width: 50%; height: 50%" class="img-fluid img-circle" src="{{user.photoUrl}}" alt="Avatar">
+          <img src="{{user.photoUrl}}" alt="Avatar">
           <h3 appBolder >{{user.userProfile}}</h3>
         </div>
         <p>{{user.bio}}</p>
@@ -22,14 +22,15 @@
           <button class="btn-danger" type="button" name="button" (click)='toggleRepos()' (click)='getRepos()'>Repos:{{user.numRepos}} <br> Click to View </button>
         </div>
         <br>
-         
+        <p>Created {{user.created|dateCount}} day(s) ago.</p>
+        {{user.showRepos}}
       </div>
     </div> <!-- end div profile -->
 
 
     <div class="col-md-6 scroll">
       <div *ngFor='let repo of arrayRepo'>
-        <app-repos *ngIf='user.showRepos' [repo]='repo'></app-repos>
+        <app-github-repo *ngIf='user.showRepos' [repo]='repo'></app-github-repo>
       </div>
     </div> <!-- end div repos -->
 
