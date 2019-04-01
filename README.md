@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 # Git-Search
-=======
+
 #### GTIHUB SEARCH, March 1st 2019
 #### By **Mohammed Mwai**
 ## Description
