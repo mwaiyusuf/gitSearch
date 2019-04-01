@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 # Git-Search
 =======
-#### TRIANGLE TRACKER, March 1st 2019
+#### GTIHUB SEARCH, March 1st 2019
 #### By **Mohammed Mwai**
 ## Description
 THis is a website that search for github users and show their repository.The project has been built using HTML,js and styled using CSS.
