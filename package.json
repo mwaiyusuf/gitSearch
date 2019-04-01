@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "gitty",
-=======
-  "name": "git-search",
->>>>>>> 71bc884fb4cd0dae1862ff7747efa4cc7b3010a1
+  "name": "git-Search",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -23,11 +19,10 @@
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
-<<<<<<< HEAD
     "bootstrap": "^4.3.1",
-=======
->>>>>>> 71bc884fb4cd0dae1862ff7747efa4cc7b3010a1
     "core-js": "^2.5.4",
+    "jquery": "^1.12.4",
+    "popper.js": "^1.14.7",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
