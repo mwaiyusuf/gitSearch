@@ -183,7 +183,7 @@ var DateCountPipe = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2dpdGh1Yi1mb3JtL2dpdGh1Yi1mb3JtLmNvbXBvbmVudC5jc3MifQ== */"
+module.exports = "button{\n  margin-left: 340px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZ2l0aHViLWZvcm0vZ2l0aHViLWZvcm0uY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtCQUFrQjtBQUNwQiIsImZpbGUiOiJzcmMvYXBwL2dpdGh1Yi1mb3JtL2dpdGh1Yi1mb3JtLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJidXR0b257XG4gIG1hcmdpbi1sZWZ0OiAzNDBweDtcbn0iXX0= */"
 
 /***/ }),
 
@@ -194,7 +194,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<form (ngSubmit)='submitUser()' #githubForm='ngForm'>\n\n  <!--Name Input -->\n      <div class=\"form-group\">\n        <label appBolder for=\"name\">Search Profile:</label>\n        <input id=\"name\" class=\"form-control\" type=\"text\" required [(ngModel)]=\"username\" name=\"name\" #name=\"ngModel\">\n        <button type=\"submit\" class=\"btn-primary\">  🔍  SEARCH </button>\n      </div>\n      <div class=\"alert-danger\" [hidden]=\"name.valid || name.pristine\">\n        <p>Name is required</p>\n      </div>\n\n\n</form>\n"
+module.exports = "<form (ngSubmit)='submitUser()' #githubForm='ngForm'>\n\n  <!--Name Input -->\n      <div class=\"form-group\">\n        <label  for=\"name\">Search for a  user:</label>\n        <input style=\"width: 480px\" id=\"name\" class=\"form-control\" type=\"text\" required [(ngModel)]=\"username\" name=\"name\" #name=\"ngModel\">\n        <button type=\"submit\" class=\"btn btn-outline-success\" >  🔍  SEARCH </button>\n      </div>\n      <div class=\"alert-danger\" [hidden]=\"name.valid || name.pristine\">\n        <p>Name is required</p>\n      </div>\n\n\n</form>\n"
 
 /***/ }),
 
@@ -261,7 +261,7 @@ module.exports = " \n\n.following {\n  float: right;\n}\n\n.center {\n  text-ali
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <h1>Github Search</h1>\n  <div class=\"row\">\n    <app-github-form (addUser)='getResponse($event)'></app-github-form>\n  </div> \n\n\n  <div class=\"row\">\n    <div class=\"col-md-6\">\n      <div >\n        <div class=\"center\">\n          <img src=\"{{user.photoUrl}}\" alt=\"Avatar\">\n          <h3  >{{user.userProfile}}</h3>\n        </div>\n        <p>{{user.bio}}</p>\n        <div class=\"follow\">\n          <button class=\"btn-info\" type=\"button\" name=\"button\">Followers: {{user.followers}}</button>\n          <button class=\"btn-info following\" type=\"button\" name=\"button\">Following: {{user.following}}</button>\n        </div>\n        <br>\n        <div class=\"center\">\n          <button class=\"btn-danger\" type=\"button\" name=\"button\" (click)='toggleRepos()' (click)='getRepos()'>Repos:{{user.numRepos}} <br> Click to View </button>\n        </div>\n        <br>\n        <p>Created {{user.created|dateCount}} day(s) ago.</p>\n        {{user.showRepos}}\n      </div>\n    </div> <!-- end div profile -->\n\n\n    <div class=\"col-md-6 scroll\">\n      <div *ngFor='let repo of arrayRepo'>\n        <app-github-repo *ngIf='user.showRepos' [repo]='repo'></app-github-repo>\n      </div>\n    </div> \n\n\n  </div> \n\n</div>\n"
+module.exports = "<div class=\"container\">\n  <h1 style=\"text-align: center; font-size: 3em; color: #81c784\">Github Search</h1>\n  <div class=\"row\">\n    <app-github-form (addUser)='getResponse($event)'></app-github-form>\n  </div> \n\n\n  <div class=\"row\">\n    <div class=\"col-md-6\">\n      <div >\n        <div class=\"center\">\n          <img class=\"rounded-circle\" src=\"{{user.photoUrl}}\" alt=\"Avatar\">\n          \n        </div>\n        <div id=\"firstButton\">\n        <h3  >{{user.userProfile}}</h3>\n        <p>{{user.bio}}</p>\n        <div class=\"follow\">\n          <button class=\"btn-info\" type=\"button\" name=\"button\">Followers: {{user.followers}}</button>\n          <button class=\"btn-info following\" type=\"button\" name=\"button\">Following: {{user.following}}</button>\n        </div></div>\n        <br>\n        <div class=\"center\">\n          <button class=\"btn btn-outline-secondary btn-lg\" type=\"button\" name=\"button\" (click)='toggleRepos()' (click)='getRepos()'>Repos:{{user.numRepos}} <br> Click to View </button>\n        </div>\n        <br>\n        <p>Created {{user.created|dateCount}} day(s) ago.</p>\n        {{user.showRepos}}\n      </div>\n    </div> <!-- end div profile -->\n\n\n    <div class=\"col-md-6 scroll\">\n      <div *ngFor='let repo of arrayRepo'>\n        <app-github-repo *ngIf='user.showRepos' [repo]='repo'></app-github-repo>\n      </div>\n    </div> \n\n\n  </div> \n\n</div>\n"
 
 /***/ }),
 
@@ -429,10 +429,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var _user__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../user */ "./src/app/user.ts");
 /* harmony import */ var _repo_class_repo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../repo-class/repo */ "./src/app/repo-class/repo.ts");
+/* harmony import */ var src_environments_environment__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/environments/environment */ "./src/environments/environment.ts");
 
 
 
 
+
+// import { environment } from 'src/environments/environment.prod';
 
 var UserRequestService = /** @class */ (function () {
     function UserRequestService(http) {
@@ -442,8 +445,9 @@ var UserRequestService = /** @class */ (function () {
     }
     UserRequestService.prototype.userRequest = function (userInput) {
         var _this = this;
-        this.http.get("https://api.github.com/users/" + userInput + "?access_token=cb327c777eff937591311a292e4721e661dd2c7f").subscribe(function (response) {
+        this.http.get("https://api.github.com/users/" + userInput + "?access_token=" + src_environments_environment__WEBPACK_IMPORTED_MODULE_5__["environment"].apikey).subscribe(function (response) {
             var userData = response;
+            // https://api.github.com/users/daneden?access_token=43fad95bacdb5967ad02c08c76f47d9b7ba1625b
             _this.user.photoUrl = userData["avatar_url"];
             _this.user.userProfile = userData["login"];
             _this.user.bio = userData["bio"];
@@ -456,8 +460,9 @@ var UserRequestService = /** @class */ (function () {
     }; //end userRequest
     UserRequestService.prototype.repoRequest = function (userInput) {
         var _this = this;
-        this.http.get("https://api.github.com/users/" + userInput + "/repos?access_token=cb327c777eff937591311a292e4721e661dd2c7f").subscribe(function (response) {
+        this.http.get("https://api.github.com/users/" + userInput + "/repos?access_token=" + src_environments_environment__WEBPACK_IMPORTED_MODULE_5__["environment"].apikey).subscribe(function (response) {
             var reposData = response;
+            // https://api.github.com/users/daneden/repos?access_token=43fad95bacdb5967ad02c08c76f47d9b7ba1625b
             _this.arrayRepo = [];
             for (var index = 0; index < reposData["length"]; index++) {
                 _this.repo = new _repo_class_repo__WEBPACK_IMPORTED_MODULE_4__["Repo"]("", "", "");
@@ -522,7 +527,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
 var environment = {
     production: false,
-    apiUrl: ("https://api.github.com/users/")
+    apikey: ("43fad95bacdb5967ad02c08c76f47d9b7ba1625b")
 };
 
 
