@@ -41,7 +41,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<app-github-profile></app-github-profile>\n\n <app-profile></app-profile>\n\n"
+module.exports = "\n<app-github-profile></app-github-profile>\n\n <!-- <app-profile></app-profile> -->\n\n"
 
 /***/ }),
 
