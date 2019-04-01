@@ -1,17 +1,17 @@
 <<<<<<< HEAD
 # Git-Search
 =======
-#### TRIANGLE TRACKER, February 16th 2019
+#### TRIANGLE TRACKER, March 1st 2019
 #### By **Mohammed Mwai**
 ## Description
-THis is a website that determines if the measurements given can construct a triangle and which type of triangle.The project has been built using HTML,js and styled using CSS.
+THis is a website that search for github users and show their repository.The project has been built using HTML,js and styled using CSS.
 ## BEHAVIOR DRIVEN DEVELOPMENT
 | Behavior       | Input     | output|
 | :-------------: | :-------------: | :-------------: |
-| The site determines whether the inputted values can construct a triangle and moreover which type of a triangle.   | The user inputs different values in the forms.Clicks the 'calculate' button and it executes.  | It tells if the value construct a triangle and which type of triangle. |
-| If three sides are equal then its called an equilateral. | Three inputs should have same values | equilateral |
-| If none of the sides are equal. | Three sides,different values | Scalene. |
- | If two sides are equal | two inputs have the same value | Isosceles |
+| It is like a google for the Github users    | The user writes a username in the form input  | It brings the account and you can view the repository,followers and the following of the user |
+ 
+ 
+  
  ## Setup/Installation Requirements
 * 1.Have a functional github account
 * 2.On my github profile ,select-my-portfolio
@@ -21,7 +21,7 @@ THis is a website that determines if the measurements given can construct a tria
 * CSS
 * HTML
 * js
-# GitSearch
+# Git-Search
 >>>>>>> 71bc884fb4cd0dae1862ff7747efa4cc7b3010a1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
