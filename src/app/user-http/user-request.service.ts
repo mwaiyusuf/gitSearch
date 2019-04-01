@@ -3,7 +3,8 @@ import { HttpClient } from '@angular/common/http';
 
 import { User } from '../user';
 import { Repo } from '../repo-class/repo';
-
+// import { environment } from 'src/environments/environment.prod';
+import { environment } from 'src/environments/environment';
 
 @Injectable(
   // providedIn: 'root'
@@ -23,9 +24,9 @@ export class UserRequestService {
 
   userRequest(userInput) {
 
-    this.http.get("https://api.github.com/users/" + userInput + "?access_token=cb327c777eff937591311a292e4721e661dd2c7f").subscribe((response)=>{
+    this.http.get("https://api.github.com/users/" + userInput + "?access_token="+environment.apikey).subscribe((response)=>{
     const userData=response;
-
+    // https://api.github.com/users/daneden?access_token=43fad95bacdb5967ad02c08c76f47d9b7ba1625b
     this.user.photoUrl = userData["avatar_url"];
     this.user.userProfile = userData["login"];
     this.user.bio = userData["bio"];
@@ -44,9 +45,9 @@ export class UserRequestService {
 
   repoRequest(userInput) {
 
-    this.http.get("https://api.github.com/users/" + userInput + "/repos?access_token=cb327c777eff937591311a292e4721e661dd2c7f").subscribe((response) =>{
+    this.http.get("https://api.github.com/users/" + userInput + "/repos?access_token="+environment.apikey).subscribe((response) =>{
       const reposData= response;
-
+      // https://api.github.com/users/daneden/repos?access_token=43fad95bacdb5967ad02c08c76f47d9b7ba1625b
       this.arrayRepo = [];
 
       for (let index=0; index<reposData["length"]; index++) {
