@@ -37,7 +37,7 @@ export class GithubProfileComponent implements OnInit {
   getRepos() {
     // this.userService.repoRequest(username);
     this.arrayRepo = this.userService.arrayRepo;
-
+ 
     console.log("Got Repos Response");
     console.log(this.arrayRepo);
 

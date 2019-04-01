@@ -9,17 +9,19 @@
     <div class="col-md-6">
       <div >
         <div class="center">
-          <img src="{{user.photoUrl}}" alt="Avatar">
-          <h3  >{{user.userProfile}}</h3>
+          <img class="rounded-circle" src="{{user.photoUrl}}" alt="Avatar">
+          
         </div>
+        <div id="firstButton">
+        <h3  >{{user.userProfile}}</h3>
         <p>{{user.bio}}</p>
         <div class="follow">
           <button class="btn-info" type="button" name="button">Followers: {{user.followers}}</button>
           <button class="btn-info following" type="button" name="button">Following: {{user.following}}</button>
-        </div>
+        </div></div>
         <br>
         <div class="center">
-          <button class="btn-danger" type="button" name="button" (click)='toggleRepos()' (click)='getRepos()'>Repos:{{user.numRepos}} <br> Click to View </button>
+          <button class="btn btn-outline-secondary btn-lg" type="button" name="button" (click)='toggleRepos()' (click)='getRepos()'>Repos:{{user.numRepos}} <br> Click to View </button>
         </div>
         <br>
         <p>Created {{user.created|dateCount}} day(s) ago.</p>
