@@ -1,10 +1,10 @@
 import { TestBed, async } from '@angular/core/testing';
-<<<<<<< HEAD
+
 import { AppComponent } from './app.component';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-=======
+
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 
@@ -20,7 +20,7 @@ describe('AppComponent', () => {
       ],
     }).compileComponents();
   }));
-<<<<<<< HEAD
+
   it('should create the app', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
@@ -37,7 +37,7 @@ describe('AppComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('Welcome to Github-Search!');
   }));
-=======
+
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
@@ -57,5 +57,5 @@ describe('AppComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('Welcome to git-Search!');
   });
->>>>>>> 71bc884fb4cd0dae1862ff7747efa4cc7b3010a1
+
 });

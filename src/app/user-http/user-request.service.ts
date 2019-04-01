@@ -60,6 +60,6 @@ export class UserRequestService {
     })
 
 
-  } //end repoRequest
+  } //end Request
 
 }
