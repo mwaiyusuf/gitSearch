@@ -10,7 +10,11 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
+<<<<<<< HEAD
     expect(page.getTitleText()).toEqual('Welcome to gitty!');
+=======
+    expect(page.getTitleText()).toEqual('Welcome to git-Search!');
+>>>>>>> 71bc884fb4cd0dae1862ff7747efa4cc7b3010a1
   });
 
   afterEach(async () => {

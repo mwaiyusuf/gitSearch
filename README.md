@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Gitty
+=======
+# GitSearch
+>>>>>>> 71bc884fb4cd0dae1862ff7747efa4cc7b3010a1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 

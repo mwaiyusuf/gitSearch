@@ -3,7 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "gitty": {
+=======
+    "git-Search": {
+>>>>>>> 71bc884fb4cd0dae1862ff7747efa4cc7b3010a1
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +17,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/gitty",
+=======
+            "outputPath": "dist/git-Search",
+>>>>>>> 71bc884fb4cd0dae1862ff7747efa4cc7b3010a1
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -58,18 +66,30 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "gitty:build"
           },
           "configurations": {
             "production": {
               "browserTarget": "gitty:build:production"
+=======
+            "browserTarget": "git-Search:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "git-Search:build:production"
+>>>>>>> 71bc884fb4cd0dae1862ff7747efa4cc7b3010a1
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "gitty:build"
+=======
+            "browserTarget": "git-Search:build"
+>>>>>>> 71bc884fb4cd0dae1862ff7747efa4cc7b3010a1
           }
         },
         "test": {
@@ -103,7 +123,11 @@
         }
       }
     },
+<<<<<<< HEAD
     "gitty-e2e": {
+=======
+    "git-Search-e2e": {
+>>>>>>> 71bc884fb4cd0dae1862ff7747efa4cc7b3010a1
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -112,11 +136,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
+<<<<<<< HEAD
             "devServerTarget": "gitty:serve"
           },
           "configurations": {
             "production": {
               "devServerTarget": "gitty:serve:production"
+=======
+            "devServerTarget": "git-Search:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "git-Search:serve:production"
+>>>>>>> 71bc884fb4cd0dae1862ff7747efa4cc7b3010a1
             }
           }
         },
@@ -132,5 +164,9 @@
       }
     }
   },
+<<<<<<< HEAD
   "defaultProject": "gitty"
+=======
+  "defaultProject": "git-Search"
+>>>>>>> 71bc884fb4cd0dae1862ff7747efa4cc7b3010a1
 }
